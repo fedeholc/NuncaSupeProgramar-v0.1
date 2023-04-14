@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "./layout.module.css";
 import Link from "next/link";
 
-const name = "<NuncaSupeProgramar/>";
 export const siteTitle = "<NuncaSupeProgramar/>";
+export const siteDescription =
+  "Blog de (mis) apuntes para aprender a programar";
 
 export default function Layout({ children, home }) {
   return (
@@ -25,17 +25,17 @@ export default function Layout({ children, home }) {
         /> */}
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
-      
       </Head>
       <header className="">
         {home ? (
           <>
-            <h1 className="">{name}</h1>
+            <h1 className="">{siteTitle}</h1> <small>{siteDescription}</small>
+            {/* TODO: poner bien la descripción, buscar tipografía, tal vez armar componente entre titulo y descripcion */}
           </>
         ) : (
           <>
             <h1>
-              <Link href="/">{name}</Link>
+              <Link href="/">{siteTitle}</Link>
             </h1>
           </>
         )}
