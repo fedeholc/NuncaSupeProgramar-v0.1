@@ -16,14 +16,12 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
-      {/* Keep the existing code here */}
-
-      {/* Add this <section> tag below the existing <section> tag */}
-      <section>
+ 
+       <section>
         <h2>Blog</h2>
         <ul>
           {allPostsData.map(({ id, date, title }) => (
-            <li key={id}>
+            <li className="item-title" key={id}>
               <Link href={`/posts/${id}`}>{title}</Link>
               <br />
               <small>

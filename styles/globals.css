@@ -2,9 +2,56 @@ html,
 body {
   padding: 0;
   margin: 0;
+  height: 100%;
+  font-size: 18px;
+}
 
+.layout__container {
+  min-height: 100vh;
+  display: grid;
+  border: 2px solid blue;
+  justify-content: center;
+  grid-template-rows: auto 1fr auto;
+
+}
+
+header {
+  border-bottom: 1px solid red;
+}
+
+header h1 {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1.5rem;
+}
+
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 2rem;
+}
+
+body {
+  font-family: 'Roboto mono', monospace;
+  font-weight: 300;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+li.item-title   {
+  font-family: 'Karma', serif;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 * {
   box-sizing: border-box;
 }
+
+/* 
+
+font-family: 'Raleway',
+sans-serif;
+font-family: 'Roboto Slab',
+serif; */

@@ -8,7 +8,7 @@ export const siteTitle = "<NuncaSupeProgramar/>";
 
 export default function Layout({ children, home }) {
   return (
-    <div className="">
+    <div className="layout__container">
       <Head>
         TODO: cambiar favicon
         {/* <link rel="icon" href="/favicon.ico" /> */}
@@ -25,6 +25,7 @@ export default function Layout({ children, home }) {
         /> */}
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+      
       </Head>
       <header className="">
         {home ? (
@@ -33,18 +34,22 @@ export default function Layout({ children, home }) {
           </>
         ) : (
           <>
-            <h2>
+            <h1>
               <Link href="/">{name}</Link>
-            </h2>
+            </h1>
           </>
         )}
       </header>
-      <main>{children}</main>
-      {!home && (
-        <div>
-          <Link href="/">← Back to home</Link>
-        </div>
-      )}
+      <main>
+        {children}
+        {!home && (
+          <div>
+            <Link href="/">← Back to home</Link>
+          </div>
+        )}
+      </main>
+
+      <footer>foooooter</footer>
     </div>
   );
 }
