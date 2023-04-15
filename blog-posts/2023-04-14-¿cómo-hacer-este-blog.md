@@ -21,3 +21,5 @@ dominio
 dns
 
 mails
+
+react icons
