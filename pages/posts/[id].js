@@ -40,14 +40,14 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article>
-        <h1>{postData.title}</h1>
-        <div>
+      <article className="post__container">
+        <div className="post__fecha">
           <Date dateString={postData.date} />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <h1 className="post__titulo">{postData.title}</h1>
 
-        <div>Tags: {tags}</div>
+        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div className="post__tags">Tags: {tags}</div>
       </article>
     </Layout>
   );

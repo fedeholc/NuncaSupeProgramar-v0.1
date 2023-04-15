@@ -1,5 +1,5 @@
 ---
-title: ¿Cómo hacer este blog?
+title: ¿Cómo hacer un blog como este?
 description: "Explicación de cómo fui haciendo este blog"
 date: 2023-04-14T20:40:07.954Z
 preview: ""
@@ -8,18 +8,14 @@ tags: []
 categories: []
 ---
 
-Pendiente
+# **Borrador**
 
-BEM
+Mencionar:
 
-CSS modules
-
-Nextjs
-
-dominio
-
-dns
-
-mails
-
-react icons
+- BEM
+- CSS Modules
+- Nextjs
+- dominio
+- dns
+- mails
+- react icons

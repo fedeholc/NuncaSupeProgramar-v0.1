@@ -19,10 +19,10 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <section>
-        <h2>Entradas del blog</h2>
+        <h2 className="apuntes__titulo">Apuntes:</h2>
         <ul>
           {allPostsData.map(({ id, date, title }) => (
-            <li className="item-title" key={id}>
+            <li className="apuntes__item" key={id}>
               <Link href={`/posts/${id}`}>{title}</Link>
               <br />
               <small>

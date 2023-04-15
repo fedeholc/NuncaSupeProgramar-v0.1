@@ -1,11 +1,11 @@
 ---
-title: Una web para combinar tipografías
+title: Una web para obtener combinaciones de tipografías
 description: ""
 date: 2023-04-15T14:13:52.134Z
 preview: ""
 draft: true
-tags: [fuentes, tipografía]
+tags: [fuentes, tipografía, recursos]
 categories: []
 ---
 
-Una web para obtener combinaciones de tipografías: [https://fontjoy.com/](https://fontjoy.com/)
+Fontjoy [https://fontjoy.com/](https://fontjoy.com/)

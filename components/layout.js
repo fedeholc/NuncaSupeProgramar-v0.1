@@ -34,7 +34,7 @@ export default function Layout({ children, home }) {
         <main>
           {children}
           {!home && (
-            <div>
+            <div className="volver">
               <Link href="/">← Volver a la página principal</Link>
             </div>
           )}

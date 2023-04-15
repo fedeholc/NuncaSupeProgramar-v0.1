@@ -1,6 +1,6 @@
 .navbar {
   padding: 0.5rem;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px dashed lightgray;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
