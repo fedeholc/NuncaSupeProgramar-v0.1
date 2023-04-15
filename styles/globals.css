@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 0;
@@ -28,6 +32,15 @@ main {
   max-width: 800px;
 }
 
+footer {
+  font-family: "Roboto mono", mono;
+  font-size: 0.7rem;
+  padding-bottom: 0.2rem;
+  border-top: 1px solid lightgray;
+  display: grid;
+  justify-content: center;
+}
+
 h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 2rem;
@@ -50,9 +63,7 @@ li.item-title {
   font-size: 1.2rem;
 }
 
-* {
-  box-sizing: border-box;
-}
+
 
 /* 
 

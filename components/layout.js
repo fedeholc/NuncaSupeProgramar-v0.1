@@ -13,7 +13,7 @@ export default function Layout({ children, home }) {
       <div className="layout__container">
         <Head>
           TODO: cambiar favicon
-          {/* <link rel="icon" href="/favicon.ico" /> */}
+          <link rel="icon" href="/fedeico.jpeg" />
           <meta
             name="description"
             content="Blog de apuntes para aprender a programar"
@@ -35,11 +35,12 @@ export default function Layout({ children, home }) {
           {children}
           {!home && (
             <div>
-              <Link href="/">← Back to home</Link>
+              <Link href="/">← Volver a la página principal</Link>
             </div>
           )}
         </main>
-        <footer>foooooter</footer>
+
+        <footer>Federico Holc ⚡️ 2023</footer>
       </div>
     </div>
   );

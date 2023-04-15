@@ -3,7 +3,6 @@
    flex-direction: column;  /* TODO: ver si a la derecha del logo pongo iconos de rrss sino pasar esto a row  */
    align-items: baseline;
    flex-wrap: wrap;
-
  }
 
  .logo__titulo {
@@ -14,6 +13,10 @@
    padding-right: 1rem;
  }
 
+ .logo__titulo a {
+  text-decoration: none;
+  color: black;
+ }
 
  .logo__descripcion {
    margin-top: 0.2rem;
@@ -22,3 +25,4 @@
    line-height: 1.2rem;
    font-size: 0.8rem;
  }
+ 

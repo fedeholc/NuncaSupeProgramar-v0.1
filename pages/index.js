@@ -19,7 +19,7 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <section>
-        <h2>Blog</h2>
+        <h2>Entradas del blog</h2>
         <ul>
           {allPostsData.map(({ id, date, title }) => (
             <li className="item-title" key={id}>
