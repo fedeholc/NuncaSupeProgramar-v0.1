@@ -5,25 +5,30 @@ body {
   height: 100%;
   font-size: 18px;
 }
+
 /* 
 .layout__wrapper {
   display:grid;
   justify-content: center;
 }
  */
+
 .layout__container {
   min-height: 100vh;
   display: grid;
-  
-/*   border: 2px solid blue;
- */  justify-content: center;
+
+  /*   border: 2px solid blue;
+ */
+  justify-content: center;
   grid-template-rows: auto 1fr auto;
 }
 
+main {
+  margin: 0rem 4rem;
+  max-width: 800px;
+}
 
-
-h1,
-h2 {
+h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 2rem;
   font-weight: 800;
@@ -31,9 +36,11 @@ h2 {
 }
 
 body {
-  font-family: 'Roboto mono', monospace;
-  font-weight: 300;
+  font-family: 'Karma', Serif;
+  /* Antes tenía Roboto mono */
+  font-weight: 400;
   line-height: 1.5rem;
+  /* TODO: para la texto del post hay que aumentar tamaño */
   font-size: 1rem;
 }
 

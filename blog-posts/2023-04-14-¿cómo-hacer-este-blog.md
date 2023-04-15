@@ -9,3 +9,15 @@ categories: []
 ---
 
 Pendiente
+
+BEM
+
+CSS modules
+
+Nextjs
+
+dominio
+
+dns
+
+mails

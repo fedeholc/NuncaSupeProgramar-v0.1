@@ -1,13 +1,22 @@
+ .logo__container {
+   display: flex;
+   flex-direction: column;  /* TODO: ver si a la derecha del logo pongo iconos de rrss sino pasar esto a row  */
+   align-items: baseline;
+   flex-wrap: wrap;
+
+ }
+
  .logo__titulo {
    font-family: 'Roboto Slab', sans-serif;
    font-size: 1.5rem;
    font-weight: 800;
    line-height: 2rem;
+   padding-right: 1rem;
  }
 
 
  .logo__descripcion {
-  margin-top: 0.2rem;
+   margin-top: 0.2rem;
    font-family: 'Roboto mono', monospace;
    font-weight: 400;
    line-height: 1.2rem;

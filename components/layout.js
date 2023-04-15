@@ -2,10 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "./logo";
+import NavBar from "./navbar";
 
 export const siteTitle = "<NuncaSupeProgramar/>";
-export const siteDescription =
-  "Blog de apuntes para aprender desarrollo web";
+export const siteDescription = "Blog de apuntes para aprender desarrollo web";
 
 export default function Layout({ children, home }) {
   return (
@@ -29,18 +29,7 @@ export default function Layout({ children, home }) {
           <meta name="twitter:card" content="summary_large_image" />
         </Head>
         <header className="">
-          {home ? (
-            <>
-               <Logo></Logo>
-              {/* TODO: poner bien la descripción, buscar tipografía, tal vez armar componente entre titulo y descripcion */}
-            </>
-          ) : (
-            <>
-              <h1>
-                <Link href="/">{siteTitle}</Link>
-              </h1>
-            </>
-          )}
+          <NavBar></NavBar>
         </header>
         <main>
           {children}
