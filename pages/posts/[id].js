@@ -27,6 +27,14 @@ export async function getStaticPaths() {
 
 
 export default function Post({ postData }) {
+
+  // TODO: hacer que cada tag lleve a la lista de posts con esa tag
+  let tags = "";
+  postData.tags.forEach( (tag, index) => {
+    tags = tags + tag + ", ";
+  });
+  tags = tags.slice(0, tags.length-2); // le quita la coma y el espacio a la última
+
   return (
     <Layout>
       <Head>
@@ -35,11 +43,11 @@ export default function Post({ postData }) {
       <article>
         <h1>{postData.title}</h1>
         <div>
-          {postData.date}
-
-  <Date dateString={postData.date} />  
+          <Date dateString={postData.date} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+
+        <div>Tags: {tags}</div>
       </article>
     </Layout>
   );

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const siteTitle = "<NuncaSupeProgramar/>";
 export const siteDescription =
-  "Blog de (mis) apuntes para aprender a programar";
+  "Blog de (mis) apuntes para aprender desarrollo web";
 
 export default function Layout({ children, home }) {
   return (
