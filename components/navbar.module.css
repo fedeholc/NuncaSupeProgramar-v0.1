@@ -1,11 +1,11 @@
+  
  .navbar {
-   border-bottom: 1px dashed lightgray;
    display: flex;
    flex-wrap: wrap;
    align-items: center;
    justify-content: space-between;
    column-gap: 3rem;
-   border-bottom: 1px dashed lightgray;
+   border-bottom: 1px dashed var(--amarillo2);
  }
 
  .navbar__logo {
@@ -24,7 +24,7 @@
    font-size: 0.8rem;
    font-family: "Roboto mono", monospace;
    width: 100%;
-   border-bottom: 1px dashed lightgray;
+   border-bottom: 1px dashed var(--amarillo2);
  }
 
  .navbar__links a {
@@ -32,4 +32,10 @@
    height: 1rem;
    padding-top: 0.1rem;
    text-decoration: none;
+   color: black;
+ }
+
+ .navbar__links a:visited {
+
+   color: black;
  }

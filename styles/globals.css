@@ -1,7 +1,20 @@
-/* 70s 00a1d3 a92da3 fd4d2e 769f52 ff68a8 f8ca38 */
-/* fluorecent fish FEC763 EA55B1 A992FA 00207F
- */
+:root {
+  --celeste: #00a1d3;
+  --violeta: #a92da3;
+  --naranja: #fd4d2e;
+  --verde: #769f52;
+  --rosa: #ff68a8;
+  --amarillo: #f8ca38;
 
+
+  --amarillo2: #FEC763;
+  --rosa2: #EA55B1;
+  --lila: #A992FA;
+  --azul: #00207F;
+
+  --linkNuevo: hsl(225, 80%, 45%);
+  --linkVisitado: hsl(225, 100%, 35%);
+}
 
 * {
   box-sizing: border-box;
@@ -38,6 +51,14 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
+a:visited {
+  color: var(--linkVisitado)
+}
+
+a {
+  color: var(--linkNuevo);
+}
+
 main {
   margin: 0rem 0.5rem;
   max-width: 700px;
@@ -52,7 +73,7 @@ footer {
   font-size: 0.7rem;
   padding-bottom: 0.2rem;
   margin-top: 2rem;
-  border-top: 1px dashed lightgray;
+  border-top: 1px dashed var(--amarillo2);
   display: grid;
   justify-content: center;
 }

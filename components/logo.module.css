@@ -25,3 +25,10 @@
    line-height: 1.2rem;
    font-size: 0.8rem;
  }
+
+ .logo__colorRosa {
+   color: var(--rosa2);
+ }
+ .logo__colorCeleste {
+   color: var(--celeste);
+ }
