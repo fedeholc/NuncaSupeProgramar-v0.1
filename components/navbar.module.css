@@ -1,15 +1,30 @@
-.navbar {
-  padding: 0.5rem;
-  border-bottom: 1px dashed lightgray;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  column-gap: 3rem;
-}
+ .navbar {
+   padding: 0.5rem;
+   border-bottom: 1px dashed lightgray;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   column-gap: 3rem;
+ }
 
-.navbar__icons {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-}
+ .navbar__icons {
+   display: flex;
+   flex-direction: row;
+   gap: 0.5rem;
+
+ }
+
+
+ @media only screen and (max-width: 550px) {
+
+   .navbar__icons {
+     width: 100%;
+     justify-content: center;
+     margin-top: 0.2rem;
+   }
+
+   .navbar__icons a {
+     height: 1rem;
+   }
+ }

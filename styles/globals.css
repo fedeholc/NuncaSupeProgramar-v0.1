@@ -8,6 +8,7 @@ body {
   margin: 0;
   height: 100%;
   font-size: 18px;
+  min-width: 360px;
 }
 
 body {
@@ -118,3 +119,11 @@ font-family: 'Raleway',
 sans-serif;
 font-family: 'Roboto Slab',
 serif; */
+
+@media only screen and (max-width: 550px) {
+
+  html,
+  body {
+    font-size: 15px;
+  }
+}
