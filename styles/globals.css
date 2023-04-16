@@ -59,8 +59,12 @@ footer {
 
 .post__container {
   font-family: "Karma", serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
+}
+
+.post__container li {
+  margin-bottom: 0.5rem;
 }
 
 .post__container h1 {
@@ -68,7 +72,14 @@ footer {
 }
 
 .post__container h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  margin-top: 2.2rem;
+  margin-bottom: 0rem;
+  line-height: 1rem;
+}
+
+.post__container h3 {
+  font-size: 1.4rem;
   margin-top: 2.2rem;
   margin-bottom: 0rem;
   line-height: 1rem;
