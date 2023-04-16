@@ -1,6 +1,7 @@
 // TODO: poner una searchbar
 // TODO: hacer que no muestre los post que estan como borradores
 // TODO: implementar categoría de destacados.
+// TODO: colores logo
 
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
