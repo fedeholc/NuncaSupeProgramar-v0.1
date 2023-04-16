@@ -1,3 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
-
-
+Nunca Supe Programar. Blog de apuntes para aprender desarrollo web.
