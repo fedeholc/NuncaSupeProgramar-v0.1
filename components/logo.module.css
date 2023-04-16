@@ -1,6 +1,6 @@
  .logo__container {
    display: flex;
-   flex-direction: column;  /* TODO: ver si a la derecha del logo pongo iconos de rrss sino pasar esto a row  */
+   flex-direction: column;
    align-items: baseline;
    flex-wrap: wrap;
  }
@@ -14,8 +14,8 @@
  }
 
  .logo__titulo a {
-  text-decoration: none;
-  color: black;
+   text-decoration: none;
+   color: black;
  }
 
  .logo__descripcion {
@@ -25,4 +25,3 @@
    line-height: 1.2rem;
    font-size: 0.8rem;
  }
- 

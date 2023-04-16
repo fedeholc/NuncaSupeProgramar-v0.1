@@ -1,5 +1,4 @@
 // TODO: poner una searchbar
-// TODO: mediaqueries, en el tel los iconos de rss tienen que ir a la derecha (ver de hacerlo con grid areas como en el video de wes), y también cambiar el tamaño de letra, queda muy grande los títulos y el texto del post.
 
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
