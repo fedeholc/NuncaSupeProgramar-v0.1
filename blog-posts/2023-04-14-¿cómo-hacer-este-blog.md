@@ -1,22 +1,20 @@
 ---
 title: ¿Cómo hacer un blog como este?
-description: "Explicación de cómo fui haciendo este blog"
+description: Explicación de cómo fui haciendo este blog
 date: 2023-04-16T20:40:07.954Z
 preview: ""
 draft: false
 tags:
-  [
-    NextJS,
-    CSS,
-    Fuentes,
-    Tipografía,
-    Iconos,
-    React Icons,
-    Fontjoy,
-    Google Fonts,
-    Metodología BEM,
-    CSS Modules,
-  ]
+  - NextJS
+  - CSS
+  - Fuentes
+  - Tipografía
+  - Iconos
+  - React Icons
+  - Fontjoy
+  - Google Fonts
+  - Metodología BEM
+  - CSS Modules
 categories: []
 ---
 
