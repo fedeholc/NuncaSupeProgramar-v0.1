@@ -26,7 +26,7 @@ body {
   margin: 0;
   height: 100%;
   font-size: 18px;
-  min-width: 360px;
+  min-width: 400px;
 }
 
 body {
@@ -162,6 +162,6 @@ footer {
 
   html,
   body {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
