@@ -19,7 +19,7 @@ export default function NavBar() {
           <a href="https://www.linkedin.com/in/federicoholc/" target="_blank">
             <FaLinkedin></FaLinkedin>
           </a>
-          <a href="mailto:federicoholc@gmail.com">
+          <a href="mailto:dev@fedeholc.ar">
             <MdEmail></MdEmail>
           </a>
         </div>
