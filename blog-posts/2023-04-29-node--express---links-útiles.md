@@ -19,3 +19,6 @@ Railway (para hacer deploy de Express)
 
 Runkit (playground de Express)
 [https://runkit.com/home](https://runkit.com/home)
+
+Express react views (para usar JSX como lenguaje de los templates de Express)
+[https://www.npmjs.com/package/express-react-views](https://www.npmjs.com/package/express-react-views)
