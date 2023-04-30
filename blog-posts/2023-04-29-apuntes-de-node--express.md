@@ -31,17 +31,28 @@ server.listen(3000);
 
 ## Estructura básica de un servidor en Express
 
-Ejemplo básico de servidor en Express (sin routing).
+Ejemplo básico de servidor en Express (con routing).
 
-```js[class="line-numbers"]
+```js
 import express from "express";
 import { createServer } from "http";
 const app = express();
 
-app.use(function (request, response) {
-  console.log("In comes a request to: " + request.url);
-  response.end("Hello, world!");
+app.get("/", function (request, response) {
+  response.end("Welcome to my homepage!");
 });
+app.get("/about", function (request, response) {
+  response.end("Welcome to the about page!");
+});
+app.get("/weather", function (request, response) {
+  response.end("The current weather is NICE.");
+});
+
+app.use(function (request, response) {
+  response.statusCode = 404;
+  response.end("404!");
+});
+
 createServer(app).listen(3000);
 ```
 
@@ -91,4 +102,13 @@ app.use(function (request, response) {
   response.end("Looks like you didn't find a static file.");
 });
 createServer(app).listen(3000);
+```
+
+## Routing con redireccionamiento en Express
+
+La respuesta tiene que ser así:
+
+```js
+response.redirect("/hello/world");
+response.redirect("http://expressjs.com");
 ```
