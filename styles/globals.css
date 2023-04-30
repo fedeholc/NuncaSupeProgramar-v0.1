@@ -37,9 +37,9 @@ body {
   font-size: 1rem;
 }
 
-code {
-  font-size: 0.85rem;
-}
+code, pre {
+  font-size: 0.85rem !important;
+ }
 
 /* 
 .layout__wrapper {
