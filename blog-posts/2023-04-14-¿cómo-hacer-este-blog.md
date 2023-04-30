@@ -35,6 +35,9 @@ categories: []
 - Con la librería [gray-matter](https://www.npmjs.com/package/gray-matter) se leen los metadatos y el contenido en Markdown desde los archivos.
 - Con la librería [remark](https://www.npmjs.com/package/remark) se pasa de Markdown a HTML.
 
+### Syntax Highlighting (resaltado de código)
+Para darle color a los bloques de código utilicé [PrismJS](https://prismjs.com/) vía [remark-prism](https://www.npmjs.com/package/remark-prism). Para implementarlo seguí este ejemplo: [https://github.com/leerob/nextjs-prism-markdown](https://github.com/leerob/nextjs-prism-markdown)
+
 ### Tipografías
 
 - En el blog se utilizan tres tipografías: "Roboto Mono", "Roboto Slab", y "Karma".
