@@ -8,11 +8,11 @@ tags: [Node, Express, Apuntes]
 categories: []
 ---
 
-##Estructura básica de un servidor en Node
+## Estructura básica de un servidor en Node
 
 Ejemplo de estructura básica de un servidor en Node: se crea el servidor y se le pasa una callback function (requestHandler en este caso) que va a manejar los pedidos y respuestas del servidor. Se le va a pasar un objeto request (req) en el que llega la información del pedido, y otro response (res) en el que va la respuesta. En este ejemplo además se procesa la request para hacer un routing.
 
-```JavaScript
+```js
 import { createServer } from "http";
 
 function requestHandler(req, res) {
@@ -35,7 +35,7 @@ server.listen(3000);
 
 Ejemplo básico de servidor en Express (sin routing).
 
-```JavaScript
+```js
 import express from "express";
 import { createServer } from "http";
 const app = express();
@@ -51,7 +51,7 @@ createServer(app).listen(3000);
 
 Podría procesarse todo en una sola función como en ejemplo básico de (vanilla) Node, pero Express permite procesar todo mediante un array de funciones intermediarias para estructurar mejor el código. En este ejemplo se divide la respuesta de una función que se ocupa del logging.
 
-```JavaScript
+```js
 import express from "express";
 import { createServer } from "http";
 
@@ -75,7 +75,7 @@ createServer(app).listen(3000);
 
 Para responder a la request con archivos estáticos como HTML, se utiliza el middleware static al que se le pasa como parámetro la carpeta en la que van a estar los archivos. Si se especifica el archivo en la url (ej. localhost:3000/ejemplo.html) va a buscar directamente ese, sino busca index.
 
-```JavaScript
+```js
 import express from "express";
 import { static as staticPath } from "express";
 // tuve que cambiarle el nombre para evitar el error 'static' is a reserved word in strict mode. Modules are automatically in stric mode.

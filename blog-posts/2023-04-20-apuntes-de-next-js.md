@@ -13,6 +13,6 @@ slug: apuntes-de-js
 
 Para crear un nuevo proyecto:
 
-```
-npx create-next-app@latest  
+```sh
+npx create-next-app@latest
 ```
