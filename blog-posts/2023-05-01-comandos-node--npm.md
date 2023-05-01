@@ -13,9 +13,12 @@ Para crear un proyecto y que nos cree el package.json:
 
 Para que se actualice el servidor cuando modificamos un archivo:
 
-- Instalar nodemon: `npm install nodemon --global`
-- Luego iniciar con: `nodemon app.js` o poner el script para seguir usando `npm start`:
-  ```node
+- Instalar nodemon:
+  ```sh
+  npm install nodemon --global
+  ```
+- Luego iniciar con: **`nodemon app.js`** o poner el script para seguir usando **`npm start`**:
+  ```json
   "scripts": {
     "start": "nodemon app.js"
   }
