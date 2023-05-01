@@ -1,7 +1,7 @@
 ---
 title: Apuntes de Node / Express
 description: "Apuntes de Node / Express"
-date: 2023-04-29T12:33:23.615Z
+date: 2023-04-30T12:33:23.615Z
 preview: ""
 draft: true
 tags: [Node, Express, Apuntes]
@@ -111,4 +111,46 @@ La respuesta tiene que ser así:
 ```js
 response.redirect("/hello/world");
 response.redirect("http://expressjs.com");
+```
+
+## Utilizar las views / templates de Express
+
+Primero hay que instalar alguna de las view engines disponibles. En este caso EJS (Embedded JavaScript):
+`npm install ejs --save `
+
+El código de la app:
+
+```js
+import express from "express";
+import { createServer } from "http";
+import { resolve, dirname } from "path";
+import { fileURLToPath } from "url";
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const app = express();
+
+app.set("views", resolve(__dirname, "views"));
+app.set("view engine", "ejs");
+
+app.get("/", function (request, response) {
+  response.render("index", {
+    message: "Hey everyone! This is my webpage.",
+  });
+});
+
+createServer(app).listen(3001);
+```
+
+Hay que crear una carpeta views y allí un archivo ejs con el template (index.ejs en este caso):
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <%= message %>
+  </body>
+</html>
 ```
