@@ -154,3 +154,37 @@ Hay que crear una carpeta views y allí un archivo ejs con el template (index.ej
   </body>
 </html>
 ```
+
+## Manejo de errores en Express
+
+En Express se pueden crear funciones de middleware que se ocupen del manejo de errores. En general se colocan al final de lista de funciones. Cuando otra función llama a next con un argumento: `next(err);` se interrumpe el proceso de las funciones y salta a la función que se ocupa del manejo de los errores, que se define por tener cuatro parámetros en lugar de tres `(err, req, res, next)`.
+
+Por ejemplo, este código llama a next con el objeto del error:
+
+```js
+app.use(function (req, res, next) {
+  res.sendFile(filePath, function (err) {
+    if (err) {
+      next(new Error("Error sending file!"));
+    }
+  });
+});
+```
+
+Luego puede haber debajo una middleware que haga un log del error (y además vuelve a invocar a la siguiente función de manejo de errores pasandole el objeto):
+
+```js
+app.use(function (err, req, res, next) {
+  console.error(err);
+  next(err);
+});
+```
+
+La siguiente podría ser la que muestre el error y termine el proceso:
+
+```js
+pp.use(function (err, req, res, next) {
+  res.status(500);
+  res.send("Internal server error.");
+});
+```
