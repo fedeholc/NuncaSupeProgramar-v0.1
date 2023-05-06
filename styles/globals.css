@@ -70,7 +70,8 @@ main {
   max-width: 700px;
 }
 
-header {
+header,
+footer {
   min-width: 100%;
 }
 
@@ -177,9 +178,10 @@ h2 {
 
 @media only screen and (max-width: 750px) {
 
-  
 
-  main, header {
+
+  main,
+  header {
     max-width: 600px;
   }
 
@@ -195,7 +197,8 @@ h2 {
     font-size: 15px;
   }
 
-  main,header  {
+  main,
+  header {
     max-width: 500px;
   }
 
@@ -210,9 +213,12 @@ h2 {
   body {
     font-size: 15px;
   }
- main, header {
-   max-width: 380px;
- }
+
+  main,
+  header {
+    max-width: 380px;
+  }
+
   .remark-highlight {
     max-width: 100vw;
   }

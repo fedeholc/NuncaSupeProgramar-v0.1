@@ -1,7 +1,7 @@
 ---
 title: Apuntes de Node / Express
 description: "Apuntes de Node / Express"
-date: 2023-04-29T12:33:23.615Z
+date: 2023-04-30T12:33:23.615Z
 preview: ""
 draft: true
 tags: [Node, Express, Apuntes]
@@ -31,17 +31,28 @@ server.listen(3000);
 
 ## Estructura básica de un servidor en Express
 
-Ejemplo básico de servidor en Express (sin routing).
+Ejemplo básico de servidor en Express (con routing).
 
-```js[class="line-numbers"]
+```js
 import express from "express";
 import { createServer } from "http";
 const app = express();
 
-app.use(function (request, response) {
-  console.log("In comes a request to: " + request.url);
-  response.end("Hello, world!");
+app.get("/", function (request, response) {
+  response.end("Welcome to my homepage!");
 });
+app.get("/about", function (request, response) {
+  response.end("Welcome to the about page!");
+});
+app.get("/weather", function (request, response) {
+  response.end("The current weather is NICE.");
+});
+
+app.use(function (request, response) {
+  response.statusCode = 404;
+  response.end("404!");
+});
+
 createServer(app).listen(3000);
 ```
 
@@ -91,4 +102,89 @@ app.use(function (request, response) {
   response.end("Looks like you didn't find a static file.");
 });
 createServer(app).listen(3000);
+```
+
+## Routing con redireccionamiento en Express
+
+La respuesta tiene que ser así:
+
+```js
+response.redirect("/hello/world");
+response.redirect("http://expressjs.com");
+```
+
+## Utilizar las views / templates de Express
+
+Primero hay que instalar alguna de las view engines disponibles. En este caso EJS (Embedded JavaScript):
+`npm install ejs --save `
+
+El código de la app:
+
+```js
+import express from "express";
+import { createServer } from "http";
+import { resolve, dirname } from "path";
+import { fileURLToPath } from "url";
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const app = express();
+
+app.set("views", resolve(__dirname, "views"));
+app.set("view engine", "ejs");
+
+app.get("/", function (request, response) {
+  response.render("index", {
+    message: "Hey everyone! This is my webpage.",
+  });
+});
+
+createServer(app).listen(3001);
+```
+
+Hay que crear una carpeta views y allí un archivo ejs con el template (index.ejs en este caso):
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <%= message %>
+  </body>
+</html>
+```
+
+## Manejo de errores en Express
+
+En Express se pueden crear funciones de middleware que se ocupen del manejo de errores. En general se colocan al final de lista de funciones. Cuando otra función llama a next con un argumento: `next(err);` se interrumpe el proceso de las funciones y salta a la función que se ocupa del manejo de los errores, que se define por tener cuatro parámetros en lugar de tres `(err, req, res, next)`.
+
+Por ejemplo, este código llama a next con el objeto del error:
+
+```js
+app.use(function (req, res, next) {
+  res.sendFile(filePath, function (err) {
+    if (err) {
+      next(new Error("Error sending file!"));
+    }
+  });
+});
+```
+
+Luego puede haber debajo una middleware que haga un log del error (y además vuelve a invocar a la siguiente función de manejo de errores pasandole el objeto):
+
+```js
+app.use(function (err, req, res, next) {
+  console.error(err);
+  next(err);
+});
+```
+
+La siguiente podría ser la que muestre el error y termine el proceso:
+
+```js
+pp.use(function (err, req, res, next) {
+  res.status(500);
+  res.send("Internal server error.");
+});
 ```
