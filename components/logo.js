@@ -14,7 +14,7 @@ export default function Logo() {
             <span className={logo.logo__colorRosa}>{">"}</span>
           </Link>
         </div>
-        <div className={logo.logo__descripcion}>{siteDescription} 🐈‍⬛</div>
+        <div className={logo.logo__descripcion}>{siteDescription} 👾</div>
       </div>
     </>
   );
