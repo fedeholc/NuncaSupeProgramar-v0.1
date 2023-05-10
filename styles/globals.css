@@ -117,7 +117,7 @@ h2 {
 .post__container h2 {
   font-size: 1.6rem;
   margin-top: 2.2rem;
-  margin-bottom: 0rem;
+  margin-bottom: 0.5rem;
   line-height: 1rem;
 }
 
@@ -126,6 +126,15 @@ h2 {
   margin-top: 2.2rem;
   margin-bottom: 0rem;
   line-height: 1rem;
+}
+
+.post__container ul {
+  margin-top: 0px;
+}
+
+.post__container p {
+  margin-bottom: 0.3rem;
+  margin-top: 0.3rem;
 }
 
 .post__titulo {

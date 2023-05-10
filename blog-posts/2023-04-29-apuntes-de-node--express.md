@@ -1,6 +1,6 @@
 ---
-title: Apuntes de Node / Express
-description: "Apuntes de Node / Express"
+title: Apuntes de Node / Express (estructuras básicas)
+description: "Apuntes de Node / Express (estructuras básicas)"
 date: 2023-04-30T12:33:23.615Z
 preview: ""
 draft: true
