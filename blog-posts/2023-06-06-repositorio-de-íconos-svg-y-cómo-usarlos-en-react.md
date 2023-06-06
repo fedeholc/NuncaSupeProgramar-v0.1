@@ -8,6 +8,6 @@ tags: [íconos, svg, react, recursos]
 categories: []
 ---
 
-- **Tabler Icons** [https://tablericons.com/](https://tablericons.com/) Íconos SVG gratuitos y de uso libre.
+- **Tabler Icons** [https://tabler-icons.io/](https://tabler-icons.io/) Íconos SVG gratuitos y de uso libre.
 
 - Para ver cómo usarlos en forma de componente de React con Vite, ver acá: [https://www.freecodecamp.org/news/how-to-import-svgs-in-react-and-vite/](https://www.freecodecamp.org/news/how-to-import-svgs-in-react-and-vite/)
