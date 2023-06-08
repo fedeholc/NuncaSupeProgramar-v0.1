@@ -19,7 +19,7 @@ npx create-next-app@latest
 
 Para cambiar el puerto en el que se ejecuta, cambiar en el `package.json`:
 
-```sh
+```json
 "scripts": {
   "dev": "next -p 3002",
   "build": "next build",
