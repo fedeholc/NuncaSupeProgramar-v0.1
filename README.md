@@ -1,6 +1,6 @@
 # NuncaSupeProgramar - Blog de apuntes para aprender desarrollo web 👾
 
-[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/jonatasemidio/multilanguage-readme-pattern/blob/master/README.es.md)
+[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/fedeholc/NuncaSupeProgramar/edit/main/README.md)
 
 My blog to organize notes, learn, and share knowledge.
 
