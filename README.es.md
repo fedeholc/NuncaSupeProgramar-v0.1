@@ -1,6 +1,6 @@
-# NuncaSupeProgramar - Blog de apuntes para aprender desarrollo web 👾
+# NuncaSupeProgramar - Blog de apuntes para aprender desarrollo web 👾 (v0.1)
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/fedeholc/NuncaSupeProgramar/blob/main/README.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/fedeholc/NuncaSupeProgramar-v0.1/blob/main/README.md)
 
 Mi blog para organizar apuntes, aprender, y compartir el conocimiento.
 
